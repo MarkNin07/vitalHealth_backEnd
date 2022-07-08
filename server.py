@@ -24,3 +24,8 @@ def get_products():
 def to_json(product):
     product["_id"] = str(product["_id"])
     return product
+
+@app.route('/featuresProduct')
+def post_features product():
+    features = request.form['features product']
+    return features
